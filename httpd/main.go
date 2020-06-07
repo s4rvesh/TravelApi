@@ -14,9 +14,9 @@ func main() {
 	r := gin.Default()
 
 	r.GET("/", handler.homepage())
-	/*r.GET("/nearBy/:location", handler.nearBy())
+	r.GET("/nearBy/:location", handler.nearBy())
 	r.GET("/myBookings/:uid", handler.myBookings())
-	r.POST("/bookCab", handler.bookCab())*/
+	r.POST("/bookCab", handler.bookCab())
 
 	r.Run()
 
