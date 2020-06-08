@@ -8,11 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type Cab struct {
-	vid      int    `json:"vid"`
-	vname    string `json:"vname"`
-	location int    `json:"location"`
-}
+
 
 func nearBy(c *gin.Context) {
 

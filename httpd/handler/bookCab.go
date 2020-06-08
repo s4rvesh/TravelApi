@@ -7,13 +7,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type Bookings struct {
-	uid      int    `json:"uid"`
-	bid      int    `json:"bid"`
-	startLoc string `json:"startLoc"`
-	endLoc   string `json:"endLoc"`
-}
-
 func myBookings(c *gin.Context) {
 
 	db, err := sql.Open("mysql", "root:password@tcp(127.0.0.1:3306)/travel")

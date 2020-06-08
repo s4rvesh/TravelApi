@@ -7,6 +7,19 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
+type Bookings struct {
+	uid      int    `json:"uid"`
+	bid      int    `json:"bid"`
+	startLoc string `json:"startLoc"`
+	endLoc   string `json:"endLoc"`
+}
+
+type Cab struct {
+	vid      int    `json:"vid"`
+	vname    string `json:"vname"`
+	location int    `json:"location"`
+}
+
 func main() {
 
 	fmt.Println("Hello")
